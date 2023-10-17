@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>render chlra haii</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Enter data</h1>
+    <form action="/ledgerinfo" method='post'>
+        <label for="entry">Entry:</label>
+        <input type="text" name="entry" id="entry">
+        <button type="submit">Submit</button>
+    </form>
+    <h1>Retrive data</h1>
+    <form action="/ledgerinfo" method='get'>
+        <button type="submit">Retrieve</button>
+    </form>
+    
+</body>
+</html>
